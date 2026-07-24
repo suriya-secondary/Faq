@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+*
+{
+    box-sizing: border-box;
+    font-family: "Oswald",sans-serif;
+}
+body
+{
+  background-color:purple;
+}
+.faq-accordian
+{
+  max-width: 800px;
+  margin: 0 auto;
+}
+.faq-accordian h1
+{
+  color: white;
+}
+.faq-item
+{
+  margin-bottom: 20px;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.faq-item-header
+{
+  background-color: white;
+  cursor: pointer;
+  padding: 15px;
+}
+.faq-item-header:hover{
+  background-color: #e0e0e0;
+}
+.faq-item-body
+{
+  background-color:#fff;
+  max-height: 0px;
+  overflow: hidden;
+  transition: max-height .6s ease-in-out;
+}
+.faq-body-content
+{
+  padding: 15px;
+  color:red;
+}
+.faq-item.active .faq-item-body
+{
+  max-height: 300px;
+}
